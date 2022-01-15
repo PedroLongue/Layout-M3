@@ -1,0 +1,190 @@
+.main-banner-wrapper {
+    background-image: url('../assets/images/mainBannerBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 70vh;
+}
+
+/* Estilo do texto do banner */
+.main-banner-title {
+    display: flex;
+}
+
+/* Estilo do texto do banner */
+.main-banner-title-style {
+    font-family: 'Encode Sans', sans-serif;
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 55px;
+    color: var(--white);
+}
+
+/* Imagem Logo da M3 */
+.main-banner-logo-m3-image {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    top: 500px;
+    left: 10px;
+}
+
+/* Imagem e logo da m3 academy */
+.main-banner-elements-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: flex-end;
+}
+
+/* Imagem Logo M3 Academy */
+.main-banner-m3-academy {
+    position: relative;
+    top: 80px;  
+}
+
+/* Imagem do banner */
+.main-banner-lecture-image {
+    position: relative;
+    top: -150px;
+}
+
+/* Imagens tablet e mobile */
+.main-banner-lecture-image-tablet-style,
+.main-banner-logo-m3-academy-image-tablet-style,
+.main-banner-logo-m3-image-tablet-style,
+.main-banner-lecture-image-mobile-style,
+.main-banner-logo-m3-academy-image-mobile-style,
+.main-banner-logo-m3-image-mobile-style {
+    display: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1060px) {
+    .main-banner-lecture-image-tablet-style,
+    .main-banner-logo-m3-academy-image-tablet-style,
+    .main-banner-logo-m3-image-tablet-style {
+        display: block;
+    }
+
+    .main-banner-lecture-image-desktop-style,
+    .main-banner-logo-m3-academy-image-desktop-style,
+    .main-banner-logo-m3-image-desktop-style {
+        display: none;
+    }
+
+    .main-banner-wrapper {
+        height: 50vh;
+    }
+
+    .main-banner-title-style {
+        font-size: 55px;
+    }
+
+    .main-banner-logo-m3-image {
+        top: 360px;
+    }
+
+    .main-banner-m3-academy {
+        top: 10px;  
+    }
+
+    .main-banner-elements-wrapper {
+        gap: 20px;
+    }
+} 
+
+@media screen and (max-width: 890px) {
+    .main-banner-wrapper {
+        height: 70vh;
+    }
+
+    .main-banner-title {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .main-banner-title-style {
+        margin-top: 20px;
+        margin-left: 60px;
+        font-size: 50px;
+    }
+    
+    .main-banner-elements-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        top: 100px;
+    }
+    
+    .main-banner-m3-academy {
+        top: -70px;  
+    }
+
+    .main-banner-lecture-image {
+        top: -60px;
+    }
+
+    .main-banner-logo-m3-image {
+        top: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-banner-lecture-image-mobile-style,
+    .main-banner-logo-m3-academy-image-mobile-style,
+    .main-banner-logo-m3-image-mobile-style {
+        display: block;
+    }
+
+    .main-banner-lecture-image-tablet-style,
+    .main-banner-logo-m3-academy-image-tablet-style,
+    .main-banner-logo-m3-image-tablet-style {
+        display: none;
+    }
+
+    .main-banner-title-style {
+        font-size: 45px;
+    } 
+    .main-banner-wrapper { 
+        height: 65vh;
+    }
+
+    .main-banner-m3-academy {
+        position: relative;
+        top: -80px;  
+    }
+
+    .main-banner-logo-m3-image {
+        top: 460px;
+    }
+    
+    .main-banner-lecture-image {
+        top: -90px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .main-banner-title-style {
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 4px;
+    }
+
+    .main-banner-title-style {
+        font-size: 40px;
+    }
+
+    .main-banner-elements-wrapper {
+        top: 100px;
+    }
+
+    .main-banner-m3-academy {
+        position: relative;
+        top: -80px;  
+    }
+
+    .main-banner-logo-m3-image {
+        top: 80px;
+    } 
+}

@@ -1,0 +1,132 @@
+.bottom-banner {
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-100);
+    height: 514px;
+    margin-top: 750px;
+}
+
+.bottom-banner-image-tablet,
+.bottom-banner-image-mobile {
+    display: none;
+}
+
+.bottom-banner-info-card-personal-information {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom-banner-info-card-personal-information-greetings {
+    font-size: 64px;
+    font-family: 'Encode Sans', sans-serif;
+    color: var(--blue-400);
+}
+
+.bottom-banner-info-card-personal-information-phone,
+.bottom-banner-info-card-personal-information-email,
+.bottom-banner-info-card-general-information-city,
+.bottom-banner-info-card-general-information-city-phone {
+    color: var(--gray-300);
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.bottom-banner-info-card-personal-information-phone {
+    font-size: 40px;
+}
+
+.bottom-banner-info-card-personal-information-email {
+    font-size: 24px;
+}
+
+.bottom-banner-info-card-general-information {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom-banner-info-card-general-information-city {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 64px;
+}
+
+.bottom-banner-info-card-general-information-city-phone {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 970px) {
+    .bottom-banner-image-tablet {
+        display: block;
+    }
+
+    .bottom-banner-image-desktop {
+        display: none;
+    }
+
+    .bottom-banner {
+        gap: 150px;
+        height: 256px;
+        margin-top: 500px;
+    }
+    
+    .bottom-banner-info-card-personal-information {
+        gap: 8px;
+    }
+    
+    .bottom-banner-info-card-personal-information-greetings {
+        font-size: 32px;
+    }
+    
+    .bottom-banner-info-card-personal-information-phone {
+        font-size: 20px;
+    }
+    
+    .bottom-banner-info-card-personal-information-email {
+        font-size: 12px;
+    }
+    
+    .bottom-banner-info-card-general-information {
+        gap: 8px;
+    }
+    
+    .bottom-banner-info-card-general-information-city {
+        font-size: 16px;
+        margin-top: 32px;
+    }
+    
+    .bottom-banner-info-card-general-information-city-phone {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bottom-banner {
+        margin-top: 100px;
+    }
+
+    .bottom-banner-image-mobile {
+        display: block;
+    }
+
+    .bottom-banner-image-tablet {
+        display: none;
+    }
+
+    .bottom-banner {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .bottom-banner {
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .bottom-banner-info-card-personal-information-greetings {
+        text-align: center;
+    }
+}

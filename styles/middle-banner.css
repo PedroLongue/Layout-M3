@@ -1,0 +1,120 @@
+.middle-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.middle-banner-image-01-wrapper {
+    position: absolute;
+    margin: 66px 500px 0 0;
+}
+
+.middle-banner-image-01 {
+    position: relative;
+    border-radius: 8px;
+    width: 357px;
+    height: 267px;
+    object-fit: cover;
+}
+
+.middle-banner-image-02-wrapper {
+    position: absolute;
+    margin: 127px 0 0 300px;
+    z-index: 1;
+}
+
+.middle-banner-image-02 {
+    position: relative;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 366px;
+    height: 412px;
+}
+
+.middle-banner-image-03-wrapper {
+    position: absolute;
+    margin: 400px 400px 0 0;
+}
+
+.middle-banner-image-03 {
+    position: relative;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 417px;
+    height: 220px;
+}
+
+@media screen and (max-width: 1040px) {
+    .middle-banner-image-01-wrapper {
+        margin: 66px 200px 0 0;
+    }
+    
+    .middle-banner-image-01 {
+        width: 258px;
+        height: 178px;
+    }
+    
+    .middle-banner-image-02-wrapper {
+        margin: 127px 0 0 350px;
+    }
+    
+    .middle-banner-image-02 {
+        width: 244px;
+        height: 275px;
+    }
+    
+    .middle-banner-image-03-wrapper {
+        margin: 300px 100px 0 0;
+    }
+    
+    .middle-banner-image-03 {
+        width: 278px;
+        height: 147px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .middle-banner {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .middle-banner-image-01-wrapper,
+    .middle-banner-image-02-wrapper,
+    .middle-banner-image-03-wrapper {
+        position: static;
+        margin: 0;
+    }
+
+    .middle-banner-image-01 {
+        width: 357px;
+        height: 267px;
+    }
+    
+    .middle-banner-image-02 {
+        width: 366px;
+        height: 412px;
+    }
+    
+    .middle-banner-image-03 {
+        width: 417px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .middle-banner-image-01 {
+        width: 258px;
+        height: 178px;
+    }
+    
+    .middle-banner-image-02 {
+        width: 244px;
+        height: 275px;
+    }
+    
+    .middle-banner-image-03 {
+        width: 278px;
+        height: 147px;
+    }
+}

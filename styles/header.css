@@ -1,0 +1,181 @@
+.header-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+}
+
+/* Imagem do header */
+.header-page-image {
+    padding: 16px 24px;
+}
+
+/* logo para mobile e tablet oculta */
+.logo-M3-tablet,
+.logo-M3-mobile {
+    display: none;
+}
+
+/* Formata o menu mobile */
+.header-page-nav-burguer div {
+    width: 30px;
+    height: 2px;
+    background: var(--black);
+    margin: 8px;
+}
+
+/* Links da Barra de Navegação */
+.header-page-nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    gap: 40px;
+    margin-right: 24px;
+}
+
+/* link de serviços, blog e clientes */
+.header-page-services-link-wrapper, 
+.header-page-blog-link-wrapper, 
+.header-page-customers-link-wrapper {
+    margin-top: 38px;
+}
+
+/* Link de clientes */
+.header-page-customers-link-wrapper {
+    margin-right: 20px;
+}
+
+/* Link de contatos */
+.header-page-contacts-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 150px;
+    height: 45px;
+    margin-top: 30px;
+    background: var(--blue-300);
+    transition: background-color 0.2s linear;
+}
+
+.header-page-contacts-link-wrapper:hover {
+    background: var(--blue-500);
+}
+
+.header-page-contacts-link-wrapper:active {
+    background: var(--blue-100);
+}
+
+.header-page-contacts-link {
+    color: var(--white);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1060px) {
+    .logo-M3-desktop {
+        display: none;
+    }
+
+    .logo-M3-tablet {
+        display: block;
+    }
+
+    .header-page-wrapper {
+        height: 80px;
+    }
+
+    .header-page-services-link-wrapper, 
+    .header-page-blog-link-wrapper, 
+    .header-page-customers-link-wrapper {
+        margin-top: 28px;
+    }
+
+    .header-page-customers-link-wrapper {
+        margin-right: 14px;
+    }
+
+    .header-page-contacts-link-wrapper {
+        margin-top: 25px;
+        width: 100px;
+        height: 32px;
+    }
+
+    .header-page-nav-list a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .header-page-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin: 0;
+        right: 0;
+        top: 64px;
+        width: 100%;
+        height: 0;
+        transition: .8s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        background: var(--white);
+    } 
+
+    .header-page-nav.active .header-page-nav-list {
+        visibility: visible;
+        height: calc(100vh - 64px);
+    }
+
+    .header-page-nav-burguer-button {
+        display: flex;
+        padding: 16px 24px;
+        background: none;
+        gap: 8px;
+    }
+
+    .header-page-nav-burguer-icon {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    .header-page-nav-burguer-icon::after, 
+    .header-page-nav-burguer-icon::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: var(--black);
+        transition: .6s;
+        position: relative;
+    }
+    
+    .header-page-nav.active .header-page-nav-burguer-icon  {
+        border-top: none;
+    }
+
+    .header-page-nav.active .header-page-nav-burguer-icon::before {
+        transform: rotate(135deg);
+    }
+
+    .header-page-nav.active .header-page-nav-burguer-icon::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+} 
+
+@media screen and (max-width: 700px) {
+    .logo-M3-tablet {
+        display: none;
+    }
+
+    .logo-M3-mobile {
+        display: block;
+    }
+
+    .header-page-wrapper {
+        height: 64px;
+    }
+}

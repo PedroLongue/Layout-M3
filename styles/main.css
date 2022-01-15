@@ -1,0 +1,9 @@
+@import './global.css';
+@import './header.css';
+@import '/styles/variables.css';
+@import './main-banner.css';
+@import './middle-description.css';
+@import './middle-banner.css';
+@import './bottom-banner.css';
+@import './footer-banner.css';
+@import './footer.css';

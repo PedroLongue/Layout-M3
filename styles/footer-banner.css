@@ -1,0 +1,14 @@
+.footer-banner {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer-banner {
+        grid-template-columns: repeat(1, max-content);
+        height: 500px;
+    }
+}
